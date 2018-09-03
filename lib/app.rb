@@ -30,7 +30,7 @@ class App < Sinatra::Application
     set :docs_origin, File.join('', docs_prefix)
     set :docs_path, File.join(public_folder, docs_prefix)
     set :docs_manifest_path, File.join(docs_path, 'docs.json')
-    set :default_docs, %w(css dom dom_events html http javascript)
+    set :default_docs, %w(python~3.5 scikit_learn numpy~1.14 pandas~0.22 tensorflow~python matplotlib~2.1 scikit_image)
     set :news_path, File.join(root, assets_prefix, 'javascripts', 'news.json')
 
     set :csp, false
