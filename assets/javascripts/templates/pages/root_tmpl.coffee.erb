@@ -1,28 +1,5 @@
 app.templates.splash = """<div class="_splash-title">DevDocs</div>"""
 
-<% if App.development? %>
-app.templates.intro = """
-  <div class="_intro"><div class="_intro-message">
-    <h2 class="_intro-title">Hi there!</h2>
-    <p>Thanks for downloading DevDocs. Here are a few things you should know:
-    <ol class="_intro-list">
-      <li>Your local version of DevDocs won't self-update. Unless you're modifying the code,
-          I&nbsp;recommend using the hosted version at <a href="https://devdocs.io">devdocs.io</a>.
-      <li>Run <code>thor docs:list</code> to see all available documentations.
-      <li>Run <code>thor docs:download &lt;name&gt;</code> to download documentations.
-      <li>Run <code>thor docs:download --installed</code> to update all downloaded documentations.
-      <li>To be notified about new versions, don't forget to <a href="https://github.com/freeCodeCamp/devdocs/subscription">watch the repository</a> on GitHub.
-      <li>The <a href="https://github.com/freeCodeCamp/devdocs/issues">issue tracker</a> is the preferred channel for bug reports and
-          feature requests. For everything else, use the <a href="https://groups.google.com/d/forum/devdocs">mailing list</a>.
-      <li>Contributions are welcome. See the <a href="https://github.com/freeCodeCamp/devdocs/blob/master/CONTRIBUTING.md">guidelines</a>.
-      <li>DevDocs is licensed under the terms of the Mozilla Public License v2.0. For more information,
-          see the <a href="https://github.com/freeCodeCamp/devdocs/blob/master/COPYRIGHT">COPYRIGHT</a> and
-          <a href="https://github.com/freeCodeCamp/devdocs/blob/master/LICENSE">LICENSE</a> files.
-    </ol>
-    <p>Happy coding!
-  </div></div>
-"""
-<% else %>
 app.templates.intro = """
   <div class="_intro"><div class="_intro-message">
     <h2 class="_intro-title">Welcome!</h2>
@@ -43,21 +20,34 @@ app.templates.intro = """
     <p>Happy coding!
   </div></div>
 """
-<% end %>
 
-app.templates.mobileIntro = """
+app.templates.mobileIntro =
+en: """
   <div class="_mobile-intro">
     <h2 class="_intro-title">Welcome!</h2>
-    <p>DevDocs combines multiple API documentations in a fast, organized, and searchable interface.
+    <p>Here combines multiple API documentations in a fast, organized, and searchable interface.
        Here's what you should know before you start:
     <ol class="_intro-list">
-      <li>Pick your docs in the <a href="/settings">Preferences</a>.
       <li>The search supports fuzzy matching.
       <li>To search a specific documentation, type its name (or an abbr.), then Space.
-      <li>For the latest news, follow <a href="https://twitter.com/DevDocs">@DevDocs</a>.
-      <li>DevDocs is <a href="https://github.com/freeCodeCamp/devdocs">open source</a>.
+      <li>Pick your docs in the <a href="/settings">Preferences</a>.
     </ol>
     <p>Happy coding!
+    <p class="_intro_open_source">Derived from open source <a href="https://github.com/freeCodeCamp/devdocs">DevDocs</a>.
+  </div>
+"""
+zh: """
+  <div class="_mobile-intro">
+    <h2 class="_intro-title">欢迎!</h2>
+    <p>这里集合了很多常用的 API 文档，方便进行快速的查询。
+       下面是你开始前需要知道的：
+    <ol class="_intro-list">
+      <li>搜索支持模糊查询
+      <li>如果想要搜索特定文档，输入其名字或者简称（比如，numpy），然后空格。
+      <li>如果想要更改查询的文档列表，可以进入 <a href="/settings">Preferences</a> 来修改
+    </ol>
+    <p>享受开发吧!
+    <p class="_intro_open_source">基于开源的 <a href="https://github.com/freeCodeCamp/devdocs">DevDocs</a>。
   </div>
 """
 

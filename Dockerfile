@@ -2,6 +2,8 @@ FROM ruby:2.5.1
 
 ENV LANG=C.UTF-8
 
+ENV LANG=C.UTF-8
+
 WORKDIR /devdocs
 
 RUN apt-get update && \

@@ -12,8 +12,6 @@ class app.views.RootPage extends app.View
 
     tmpl = if app.isAndroidWebview()
       'androidWarning'
-    else if @isHidden()
-      'splash'
     else if app.isMobile()
       'mobileIntro'
     else
