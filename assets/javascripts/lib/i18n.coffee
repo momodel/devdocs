@@ -18,6 +18,7 @@ class @I18n
       return lang if test lang
 
       lang = lang.replace /_\w+$/, ''
+      lang = lang.replace /-\w+$/, ''
       # eg. en
       return lang if test lang
 
