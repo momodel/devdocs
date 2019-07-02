@@ -4,7 +4,7 @@ $LOAD_PATH.unshift 'lib'
 
 require 'app'
 
-map '/' do
+map '/devdocs' do
   run App
 end
 
