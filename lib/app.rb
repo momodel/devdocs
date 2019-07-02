@@ -44,6 +44,7 @@ class App < Sinatra::Application
       config.prefix = "/#{assets_prefix}"
       config.public_path = public_folder
       config.protocol = :relative
+      config.root_url = '/devdocs'
     end
   end
 
