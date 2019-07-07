@@ -1,7 +1,5 @@
 .DS_Store
 .bundle
-*.pxm
-*.sketch
 tmp
 public/assets
 public/fonts
@@ -9,3 +7,5 @@ public/docs/**/*
 !public/docs/docs.json
 !public/docs/**/index.json
 .idea
+docs/**/*
+!docs/*.md
