@@ -1,19 +1,19 @@
 source 'https://rubygems.org'
 ruby '2.6.0'
 
-gem 'rake'
+gem 'rake', '>= 12.3.3'
 gem 'thor'
 gem 'pry', '~> 0.12.0'
-gem 'activesupport', '~> 5.2', require: false
-gem 'yajl-ruby', require: false
+gem 'activesupport', '~> 5.2', '>= 5.2.4.3', require: false
+gem 'yajl-ruby', '>= 1.4.2', require: false
 gem 'html-pipeline'
 gem 'typhoeus'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.13.6'
 
 group :app do
-  gem 'rack'
-  gem 'sinatra'
-  gem 'sinatra-contrib'
+  gem 'rack', '>= 2.1.4'
+  gem 'sinatra', '>= 2.2.0'
+  gem 'sinatra-contrib', '>= 2.2.0'
   gem 'rack-ssl-enforcer'
   gem 'thin'
   gem 'sprockets'
@@ -30,7 +30,7 @@ group :production do
 end
 
 group :development do
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
 end
 
 group :docs do
