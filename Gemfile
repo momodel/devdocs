@@ -8,7 +8,7 @@ gem 'activesupport', '~> 5.2', require: false
 gem 'yajl-ruby', require: false
 gem 'html-pipeline'
 gem 'typhoeus'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.13.9'
 
 group :app do
   gem 'rack'
