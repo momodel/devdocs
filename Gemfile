@@ -11,7 +11,7 @@ gem 'typhoeus'
 gem 'nokogiri'
 
 group :app do
-  gem 'rack'
+  gem 'rack', '>= 3.0.0'
   gem 'sinatra'
   gem 'sinatra-contrib'
   gem 'rack-ssl-enforcer'
@@ -45,7 +45,7 @@ end
 group :test do
   gem 'minitest'
   gem 'rr', require: false
-  gem 'rack-test', require: false
+  gem 'rack-test', '>= 2.0.0', require: false
 end
 
 if ENV['SELENIUM'] == '1'
