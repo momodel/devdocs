@@ -4,14 +4,14 @@ ruby '2.6.0'
 gem 'rake'
 gem 'thor'
 gem 'pry', '~> 0.12.0'
-gem 'activesupport', '~> 5.2', require: false
+gem 'activesupport', '~> 6.1', '>= 6.1.7.1', require: false
 gem 'yajl-ruby', require: false
 gem 'html-pipeline'
 gem 'typhoeus'
 gem 'nokogiri'
 
 group :app do
-  gem 'rack'
+  gem 'rack', '>= 2.0.9.2'
   gem 'sinatra'
   gem 'sinatra-contrib'
   gem 'rack-ssl-enforcer'
