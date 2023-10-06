@@ -13,7 +13,7 @@ gem 'nokogiri'
 group :app do
   gem 'rack'
   gem 'sinatra'
-  gem 'sinatra-contrib'
+  gem 'sinatra-contrib', '>= 2.0.6'
   gem 'rack-ssl-enforcer'
   gem 'thin'
   gem 'sprockets'
