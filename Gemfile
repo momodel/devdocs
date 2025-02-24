@@ -6,9 +6,9 @@ gem 'thor'
 gem 'pry', '~> 0.12.0'
 gem 'activesupport', '~> 5.2', require: false
 gem 'yajl-ruby', require: false
-gem 'html-pipeline'
+gem 'html-pipeline', '>= 3.0.0'
 gem 'typhoeus'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.18.3'
 
 group :app do
   gem 'rack'
