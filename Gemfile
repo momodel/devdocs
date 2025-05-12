@@ -11,9 +11,9 @@ gem 'typhoeus'
 gem 'nokogiri'
 
 group :app do
-  gem 'rack'
-  gem 'sinatra'
-  gem 'sinatra-contrib'
+  gem 'rack', '>= 2.2.14'
+  gem 'sinatra', '>= 4.0.0'
+  gem 'sinatra-contrib', '>= 4.0.0'
   gem 'rack-ssl-enforcer'
   gem 'thin'
   gem 'sprockets'
