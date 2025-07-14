@@ -6,18 +6,18 @@ gem 'thor'
 gem 'pry', '~> 0.12.0'
 gem 'activesupport', '~> 5.2', require: false
 gem 'yajl-ruby', require: false
-gem 'html-pipeline'
+gem 'html-pipeline', '>= 3.0.0'
 gem 'typhoeus'
 gem 'nokogiri'
 
 group :app do
   gem 'rack'
-  gem 'sinatra'
-  gem 'sinatra-contrib'
+  gem 'sinatra', '>= 2.0.6'
+  gem 'sinatra-contrib', '>= 2.0.6'
   gem 'rack-ssl-enforcer'
-  gem 'thin'
-  gem 'sprockets'
-  gem 'sprockets-helpers'
+  gem 'thin', '>= 2.0.0'
+  gem 'sprockets', '>= 4.2.0'
+  gem 'sprockets-helpers', '>= 1.2.2'
   gem 'erubi'
   gem 'browser'
   gem 'sass'
@@ -30,7 +30,7 @@ group :production do
 end
 
 group :development do
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.5.1'
 end
 
 group :docs do
@@ -45,7 +45,7 @@ end
 group :test do
   gem 'minitest'
   gem 'rr', require: false
-  gem 'rack-test', require: false
+  gem 'rack-test', '>= 2.0.0', require: false
 end
 
 if ENV['SELENIUM'] == '1'
