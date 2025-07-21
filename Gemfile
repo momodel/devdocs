@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.6.0'
 
 gem 'rake'
-gem 'thor'
+gem 'thor', '>= 1.4.0'
 gem 'pry', '~> 0.12.0'
 gem 'activesupport', '~> 5.2', require: false
 gem 'yajl-ruby', require: false
